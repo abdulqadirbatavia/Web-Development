@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -35,3 +36,42 @@ color: green;
   border: 5px solid purple;
   
 }
+=======
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  color: hotpink;
+  font-size: 1.5em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  border-bottom: 10px dotted purple;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-style: italic;
+}
+
+.job-title {
+  color: #999999;
+  font-weight: bold;
+}
+
+a:link, a:visited {
+  color: #fb6542;
+}
+
+
+
+a:hover {
+  text-decoration: none; 
+color: green;
+}
+
+.contact-details {
+  background-color: #eeeeee;
+  border: 5px solid purple;
+  
+}
+>>>>>>> d607ec0992e6e7c6555a127967ebd6f0f64e5789

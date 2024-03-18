@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* General setup */
 
 * {
@@ -183,3 +184,162 @@ nav li a:active {
   color: white;
   background: black;
 }
+=======
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+body {
+  font-size: 10px;
+}
+
+/* Headings */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+h3 {
+  font-size: 1.25rem;
+}
+h4 {
+  font-size: 1.1rem;
+}
+h5 {
+  font-size: 1rem; 
+}
+h6 {
+  font-size: 0.9rem;
+}
+p {
+  font-size: 1rem;
+}
+nav {
+  font-size: 1.2rem;
+}
+/* Example of a button */
+button {
+  font-size: 1.1rem; 
+}
+body {
+  font-size: 1.6rem;
+  line-height: 1.6; 
+}
+/* Reset margin and padding for all elements */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center top-level heading */
+h1 {
+  text-align: center;
+}
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  letter-spacing: 0.05em; /* Adjust as needed */
+}
+body {
+  font-size: 1.6rem; /* Equivalent to 16px */
+  line-height: 1.6; /* 1.6 times the font size */
+  letter-spacing: 0.02em; /* Adjust as needed */
+  word-spacing: 0.1em; /* Adjust as needed */
+}
+section > h1 + p,
+section > h2 + p,
+section > h3 + p,
+section > h4 + p,
+section > h5 + p,
+section > h6 + p {
+  text-indent: 20px;
+}
+/* Default link color */
+a {
+  color: #333; /* Dark gray */
+}
+
+/* Visited link color */
+a:visited {
+  color: #a66;
+}
+
+/* Hover state */
+a:hover {
+  color: #a66; 
+}
+
+/* Focus state */
+a:focus {
+  outline: none; /* Remove default focus outline */
+  color: #a666; 
+}
+/* Remove default focus outline from all links */
+a:focus {
+  outline: none;
+}
+/* Active state */
+a:active {
+  color: #ff5733; /* Different color to stand out */
+  font-weight: bold; /* Make it bold */
+}
+
+/* External link icon */
+a.external-link::after {
+  content: url('external-link-icon.png'); /* Insert external link icon */
+  margin-left: 5px; /* Add spacing between link text and icon */
+}
+
+/* Lists */
+ul, ol {
+  margin-top: 1em; /* Spacing between paragraphs and lists */
+  margin-bottom: 1em; /* Spacing between lists and paragraphs */
+}
+
+li {
+  line-height: 1.6; /* Same line-height as paragraphs */
+  list-style-type: disc; /* Use disc bullet for unordered lists */
+}
+>>>>>>> d607ec0992e6e7c6555a127967ebd6f0f64e5789
