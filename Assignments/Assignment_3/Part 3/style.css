@@ -1,157 +1,185 @@
 /* General setup */
 
 * {
-  box-sizing: border-box;
-}
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+    min-width: 1000px;
+    max-width: 1400px;
+  }
+  
+  /* Layout */
+  
+  section {
+    float: left;
+    width: 50%;
+  }
+  
+  aside {
+    float: left;
+    width: 30%;
+  }
+  
+  nav {
+    float: left;
+    width: 20%;
+  }
+  
+  footer {
+    clear: both;
+  }
+  
+  header, section, aside, nav, footer {
+    padding: 20px;
+  }
+  
+  /* header and footer */
+  
+  header, footer, aside,nav, footer {
+    border-top: 5px solid #a66;
+    border-bottom: 5px solid #a66;
+  }
 
-body {
-  margin: 0 auto;
-  min-width: 1000px;
-  max-width: 1400px;
-}
+  @font-face{
+    font-family:'lovatolight';
+    src:url('fonts/Lovato-Light-webfont.eot');
+    src: url('fonts/Lovato-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Lovato-Light-webfont.woff2') format('woff2'),
+    url('fonts/Lovato-Light-webfont.woff') format('woff'),
+    url('fonts/Lovato-Light-webfont.ttf') format('truetype'),
+    url('fonts/Lovato-Light-webfont.svg#lovatolight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  }
 
-/* Layout */
+  @font-face{
+    font-family: 'josefin_slabbold';
+      src: url('fonts/josefinslab-bold-webfont.eot');
+      src: url('fonts/josefinslab-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('fonts/josefinslab-bold-webfont.woff2') format('woff2'),
+        url('fonts/josefinslab-bold-webfont.woff') format('woff'),
+        url('fonts/josefinslab-bold-webfont.ttf') format('truetype'),
+        url('fonts/josefinslab-bold-webfont.svg#josefin_slabbold') format('svg');
+      font-weight: normal;
+      font-style: normal;
+  }
 
-section {
-  float: left;
-  width: 50%;
-}
 
-aside {
-  float: left;
-  width: 30%;
-}
+/*general styling*/
 
-nav {
-  float: left;
-  width: 20%;
-}
-
-footer {
-  clear: both;
-}
-
-header, section, aside, nav, footer {
-  padding: 20px;
-}
-
-/* header and footer */
-
-header, footer {
-  border-top: 5px solid #a66;
-  border-bottom: 5px solid #a66;
-}
-
-/* WRITE YOUR CODE BELOW HERE */
-body {
+html{
+  font-family:'Times New Roman', Times, serif, serif;
   font-size: 10px;
 }
 
-/* Headings */
-h1 {
-  font-size: 2rem;
+/*heading and other elements appropriate styling and size*/
+
+h1,
+h2{
+  font-family:'Times New Roman', Times, serif, sans-serif;
+  letter-spacing: 2px;
 }
 
-h2 {
-  font-size: 1.5rem;
-}
-h3 {
-  font-size: 1.25rem;
-}
-h4 {
-  font-size: 1.1rem;
-}
-h5 {
-  font-size: 1rem; 
-}
-h6 {
-  font-size: 0.9rem;
-}
-p {
-  font-size: 1rem;
-}
-nav {
-  font-size: 1.2rem;
-}
-/* Example of a button */
-button {
-  font-size: 1.1rem; 
-}
-body {
-  font-size: 1.6rem;
-  line-height: 1.6; 
-}
-/* Reset margin and padding for all elements */
-* {
-  margin: 0;
-  padding: 0;
-}
-
-/* Center top-level heading */
-h1 {
+h1{
+  font-size: 5rem;
   text-align: center;
 }
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  letter-spacing: 0.05em; /* Adjust as needed */
-}
-body {
-  font-size: 1.6rem; /* Equivalent to 16px */
-  line-height: 1.6; /* 1.6 times the font size */
-  letter-spacing: 0.02em; /* Adjust as needed */
-  word-spacing: 0.1em; /* Adjust as needed */
-}
-section > h1 + p,
-section > h2 + p,
-section > h3 + p,
-section > h4 + p,
-section > h5 + p,
-section > h6 + p {
-  text-indent: 20px;
-}
-/* Default link color */
-a {
-  color: #333; /* Dark gray */
+
+h2{
+  font-size: 3.3rem;
 }
 
-/* Visited link color */
-a:visited {
+section h2+p{
+  text-indent: 20px;
+}
+
+p,
+li{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.5px;
+  word-spacing: 3px;
+}
+
+/*link styling*/
+/*remove focus from all the links*/
+
+a{
+  outline: none;
+}
+
+/*Giving some coloue to link*/
+a:link,
+a:visited{
   color: #a66;
 }
 
-/* Hover state */
+/* make the underlines disappear when hovering over the link */
+a:focus,
 a:hover {
-  color: #a66; 
+  text-decoration: none;
 }
 
-/* Focus state */
-a:focus {
-  outline: none; /* Remove default focus outline */
-  color: #a666; 
-}
-/* Remove default focus outline from all links */
-a:focus {
-  outline: none;
-}
-/* Active state */
+/* active state */
 a:active {
-  color: #ff5733; /* Different color to stand out */
-  font-weight: bold; /* Make it bold */
+  color: transparent;
+  text-shadow: 0px 0px 1px #f00,
+    0px 0px 2px #f00,
+    0px 0px 3px black,
+    0px 0px 4px black;
 }
 
-/* External link icon */
-a.external-link::after {
-  content: url('external-link-icon.png'); /* Insert external link icon */
-  margin-left: 5px; /* Add spacing between link text and icon */
+/* inserting external link icon next to external links */
+a[href*="http"] {
+  padding-right: 19px;
+  background: url(https://static.thenounproject.com/png/2863113-200.png) no-repeat 100% 0;
+  background-size: 16px 16px;
 }
 
-/* Lists */
-ul, ol {
-  margin-top: 1em; /* Spacing between paragraphs and lists */
-  margin-bottom: 1em; /* Spacing between lists and paragraphs */
+/* lists styling */
+ul,
+ol {
+  margin: 1.6rem 0;
 }
 
-li {
-  line-height: 1.6; /* Same line-height as paragraphs */
-  list-style-type: disc; /* Use disc bullet for unordered lists */
+ul {
+  list-style-type: square;
+}
+
+ol {
+  list-style-type: lower-latin;
+}
+
+/* navigaton menu */
+nav ul {
+  padding-left: 0;
+  margin-top: 0.8rem;
+}
+
+nav li {
+  list-style-type: none;
+  margin-bottom: 2rem;
+}
+
+nav li a {
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  line-height: 3;
+  text-align: center;
+  font-size: 2.5rem;
+  border: 1px solid #a66;
+}
+
+nav li a:focus,
+nav li a:hover {
+  color: white;
+  background: #a66;
+}
+
+nav li a:active {
+  color: white;
+  background: black;
 }
